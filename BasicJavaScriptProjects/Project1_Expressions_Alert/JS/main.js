@@ -9,3 +9,9 @@ sent2 = "and this is the end of the string" //Creating the second string "sent" 
 
 alert(sent1 + sent2) //Using the Alert function to display a concatenation of the two "sent" variables
 document.write(sent1 + sent2) //Using the Write function to display a concatenation of the two "sent" variables
+
+
+function updateDate(){
+    Date()
+    document.getElementById('update date').innerHTML = Date()
+}
