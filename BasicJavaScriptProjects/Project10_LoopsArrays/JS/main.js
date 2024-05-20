@@ -41,4 +41,12 @@ document.write(blockValue + "<br>")
 function returningValue (value){
     var printStatement = "this is the value being printed " + value
     return document.getElementById("ReturnValue").innerHTML = printStatement
+}function Call_Loop(){
+    Digit = ""
+    X = 1
+    while (X < 11){
+        Digit += "<br>" + X
+        X++
+    }
+    document.getElementById("Loop").innerHTML = Digit
 }
