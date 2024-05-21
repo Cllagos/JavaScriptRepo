@@ -28,6 +28,37 @@ function assignConstant(){
 
 }
 
+
+function returningValue (value){
+    var printStatement = "this is the value being printed " + value
+    return document.getElementById("ReturnValue").innerHTML = printStatement
+
+}function Call_Loop(){
+    Digit = ""
+    X = 1
+    while (X < 11){
+        Digit += "<br>" + X
+        X++
+    }
+    document.getElementById("Loop").innerHTML = Digit
+}
+
+
+let newCar = {
+    make : "Ferrari",
+    model : "Scuderia",
+    engine : "V12",
+    color : "Black",
+    year : "2020",
+    description : function (){
+        return "This car is a " + this.make + " and has a "+ this.engine +" engine."
+    }
+}
+function Create_Car(){
+    document.getElementById("Car Object").innerHTML = newCar.description()
+}
+
+
 var blockValue = 10
 document.write(blockValue +"<br>") 
 
@@ -38,15 +69,16 @@ document.write(blockValue +"<br>")
 
 document.write(blockValue + "<br>")
 
-function returningValue (value){
-    var printStatement = "this is the value being printed " + value
-    return document.getElementById("ReturnValue").innerHTML = printStatement
-}function Call_Loop(){
-    Digit = ""
-    X = 1
-    while (X < 11){
-        Digit += "<br>" + X
-        X++
+let continueStatement = ""
+
+function loopContinue (){
+    
+    for (i = 0; i < 10; i++){
+        if (i == 5){continue}
+    continueStatement += "The new number is now " + i + "." + "<br>"
+    document.getElementById("Continue").innerHTML = continueStatement
+
     }
-    document.getElementById("Loop").innerHTML = Digit
+    
 }
+
