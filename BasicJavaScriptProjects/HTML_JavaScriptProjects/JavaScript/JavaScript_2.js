@@ -1,7 +1,9 @@
+
+var element = document.getElementById("fname")
 function validateForm() {
-    let x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
+    let x = element.value
+    if (x == ""){
       alert("Name must be filled out");
       return false;
     }
-  }
+}
