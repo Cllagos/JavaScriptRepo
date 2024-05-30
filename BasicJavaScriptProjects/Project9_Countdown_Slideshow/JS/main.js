@@ -42,3 +42,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+document.body.classList.add('fade-out');
+
+window.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('fade-out');
+});
