@@ -2,6 +2,7 @@ body {
     background-color: blueviolet;
     max-width: 500px;
     margin: 0 auto;
+    max-height:500px
 }
 
 title {
@@ -32,13 +33,22 @@ li {
 }
 
 footer {
-    bottom: 0px;
-    border: solid 5px black;
+    display: table;
     position:fixed;
-    max-width: 100%
+    bottom: 0px;
+    border: 10px solid black;
+    color: #000;
+    text-shadow: 2px 2px 8px 0 rgba(0,0,0,1);
+    padding: 20px 50px 20px 50px;
+    text-align: center;
 }
 
 p{
     padding: 0px;
     margin: 0 auto;
+}
+
+.remove {
+    padding-bottom: 5px;
+
 }

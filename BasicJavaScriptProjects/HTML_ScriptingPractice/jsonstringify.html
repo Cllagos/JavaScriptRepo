@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id = 'string'></p>
+        <p id = 'parsed'></p>
+        <p id = 'localstorage'></p>
+
+    <script>
+        var values = {car:"lamborghini",color:"neon green",engine:"V12"}
+        var jString = JSON.stringify(values)
+        document.getElementById('string').innerHTML = jString
+
+        var newValues = '{"car":"lamborghini","color":"neon green","engine":"V12"}'
+        var jParse = JSON.parse(newValues)
+        document.getElementById('parsed').innerHTML= "My new car will be a " + jParse.car + " and the color will be "+ jParse.color + "."
+
+        var storedValues = localStorage.setItem("My Name","Carlos")
+        document.getElementById('localstorage').innerHTML = "My name is " + localStorage.getItem("My Name") + "."
+    </script>  
+        
+    </body>  
+</html>
